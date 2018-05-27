@@ -1,0 +1,193 @@
+<html>
+    <head>
+	
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+	
+	<meta charset="UTF-8">
+ 
+<!-- If IE use the latest rendering engine -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+<!-- Set the page to the width of the device and set the zoon level -->
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+
+<!--link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<style type="text/css"-->
+	
+	
+	
+	<title>
+	||Applications of Language Mod||
+	</title>
+		
+	<link href="boxes.css" rel="stylesheet" type="text/css" 
+	 href="backdrops.css" rel="stylesheet" type="text/css" />
+	
+	    <style>
+            /*basic reset */
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body {background: #9dd6dd/*#00EFDB*/;}
+            canvas {display:block;}
+        </style>
+    </head>
+    <body>
+	<div style:overflow:hidden>
+    
+   <!--goes on top of canvas-->
+ 
+  <!-- ALL BACKDROPS SHOULD REFF HERE-->
+  
+  
+  <div
+id="topheader">
+
+<ul id="headerim">
+
+
+
+
+<li2 > The Language Moderator in Game Applications </li2>
+<a href="GameModAbout.html" class=button4 style="display: block;" > <div> About </div></a>
+
+<a href="GameTargetAud.html" class=button44 style="display: block;" > <div> Target Audience </div></a>
+
+<a href="GameApp.html" class=button444 style="display: block;" > <div> Applications </div></a>
+
+</ul>
+
+</div>  <!-- END TOPHEADER-->
+
+
+<div id="stray3">
+<p class="strayText"><br></p>
+  </div>
+<div id="stray2">
+<p class="strayText">This app would be ideal for use in mutiplayer games with voice chat such as <b>Team Fortress 2, Fortnite, Overwatch, DOTA 2, World of Warcraft, DCUO, PUBG</b> etc.  <br><br> Language Moderators would also be useful for group chat applications such as <b>Discord, Blizard Voice Chat, mummble, Team Speak, Hangouts, Slack </b> etc. since they are often used for gammers to communicate while playing games.<br><br><i><b>Incorporating the chat moderator into these games and applications would reduce the amount of foul language used during gamer interaction thus reducing cyberbullying</b></i><br></p>
+  </div>
+
+
+<div id="stray">
+<div class="container">
+
+<div id="container"></div>
+<div id="images" style="padding: 2%; border:10px; align:center; margin:auto;">
+    <div class="item">
+        <img src="dotaPic.jpg">
+    </div>
+    <div class="item">
+        <img src="leaguePic.jpg">
+    </div>
+    <div class="item">
+        <img src="discordPic.jpg">
+    </div>
+    <div class="item">
+        <img src="overwatchPic.jpg">
+    </div>
+    <div class="item">
+        <img src="worldPic.jpg">
+    </div>
+    <div class="item">
+        <img src="dcouPic.jpg">
+    </div>
+	<div class="item">
+        <img src="leaguePic.jpg">
+    </div>
+	<div class="item">
+        <img src="dotaPic.jpg">
+    </div>
+    <div class="item">
+        <img src="mummblePic.jpg">
+    </div>
+    <div class="item">
+        <img src="discordPic.jpg">
+    </div>
+    <div class="item">
+        <img src="overwatchPic.jpg">
+    </div>
+    <div class="item">
+        <img src="worldPic.jpg">
+    </div>
+    <div class="item">
+        <img src="dcouPic.jpg">
+    </div>
+	<div class="item">
+        <img src="mummblePic.jpg">
+    </div>
+	
+	</div>
+	
+    <script> $(function () {
+
+    var $container = $('#container').masonry({
+        itemSelector: '.item',
+        columnWidth: 200
+    });
+
+    // reveal initial images
+    $container.masonryImagesReveal($('#images').find('.item'));
+});
+
+$.fn.masonryImagesReveal = function ($items) {
+    var msnry = this.data('masonry');
+    var itemSelector = msnry.options.itemSelector;
+    // hide by default
+    $items.hide();
+    // append to container
+    this.append($items);
+    $items.imagesLoaded().progress(function (imgLoad, image) {
+        // get item
+        // image is imagesLoaded class, not <img>, <img> is image.img
+        var $item = $(image.img).parents(itemSelector);
+        // un-hide item
+        $item.show();
+        // masonry does its thing
+        msnry.appended($item);
+    });
+
+    return this;
+};</script>
+</div>
+<p>
+    
+    <script src="//masonry.desandro.com/masonry.pkgd.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.js"></script>
+
+    </div>
+
+</p>
+
+
+
+<!-- 
+<p class="strayText">This app would be ideal for use in mutiplayer games with voice chat such as Team Fortress 2, Fortnite, Overwatch, DOTA 2, World of Warcraft, DCUO, etc.  <br><br> Language Moderators would also be useful for group chat applications such as Discord, Blizard Voice Chat, since they are often used for gammers to communicate while playing games.<br><br>Incorporating the chat moderator into these games and applications would reduce the amount of foul language used during gamer interaction thus reducing cyberbullyng<br></p>
+
+<img src="gamePic.jpg" width="100%" overflw="hidden" alt="Sample of Artwork" style=" z-index:2; background-position: center;"> -->
+   </div>
+
+
+
+
+
+
+
+  <div
+id="botheader">
+
+</div>  <!-- END BOTHEADER-->  
+
+
+  <img src="gamePic.jpg" width="100%" overflow="hidden" alt="Sample of Artwork" style=" z-index:2; background-position: center;">
+   </div> 
+ </div></div>
+        
+      
+		
+    </body>
+	</div>
+</html>

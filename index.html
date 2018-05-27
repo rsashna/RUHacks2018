@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>RuHacks</title>
+    <title>GameChat Mod</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">FlappySquare</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">BIPIN FLIES!</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -44,27 +44,24 @@
       </div>
     </nav>
 
-
     <!-- Header -->
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
           <div class="intro-lead-in">Hardest Game Ever!</div>
-          <div class="intro-heading text-uppercase">FlappyBipin!!</div>
+          <div class="intro-heading text-uppercase">Flappy Square!!</div>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Play!</a>
         </div>
       </div>
     </header>
 
     <!-- Services -->
-    <section id="game" style="background-color: grey;">
+    <section id="services">
       <div class="container">
 
 <body onload="startConverting()">
 
 <style>
-
-
 canvas {
     border:1px solid #d3d3d3;
     background-color: #f1f1f1;
@@ -94,8 +91,7 @@ position:static;
      <h1><b>  <div id="div1" class="fa"></div> </b></h1>
    
 <canvas id="myCanvas" width=500 height=500 
- style=" 
-    background:url('bg1.png');  background-size: 50%; height: 55% ">
+ style="background:url('bg1.png');  background-size: 50%; height: 55% ">
 </canvas>
   
 <script> 
@@ -297,7 +293,7 @@ function Do_a_Frame () {
 
  <div class="column">
 
-<br><br><br><br><br><br>
+<br><br><br><br><br><br><br><brr>
 
         <br>
     <style type="text/css">
@@ -351,15 +347,29 @@ function Do_a_Frame () {
             }
             r.innerHTML = finalTranscripts + '<span style="color:#999">' + interimTranscripts + '</span>';
 
-              if(interimTranscripts==="damn"|| interimTranscripts==="hello" || interimTranscripts==="shit") {
-               
-               warning = warning+1;
+          
 
-              alert("Warning: " + warning);
-              }  
 
           };
           speechRecognizer.onerror = function (event) {
+
+                      if(transcript==="damn"|| transcript==="kill" || transcript==="shit") {
+               
+               warning = warning+1;
+
+
+              if(warning===2) {
+
+                alert("Blocked!");
+                sleep(1000);
+              }  
+        else{
+              alert("Warning: " + warning);
+
+             
+
+                }
+              }
           };
         }else{
           r.innerHTML = 'Your browser is not supported. If google chrome, please upgrade!';

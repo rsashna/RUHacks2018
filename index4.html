@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>GameChat Mod</title>
+    <title>RuHacks</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -44,24 +44,27 @@
       </div>
     </nav>
 
+
     <!-- Header -->
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
           <div class="intro-lead-in">Hardest Game Ever!</div>
-          <div class="intro-heading text-uppercase">Flappy Square!!</div>
+          <div class="intro-heading text-uppercase">FlappyBipin!!</div>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Play!</a>
         </div>
       </div>
     </header>
 
     <!-- Services -->
-    <section id="services">
+    <section id="game" style="background-color: grey;">
       <div class="container">
 
 <body onload="startConverting()">
 
 <style>
+
+
 canvas {
     border:1px solid #d3d3d3;
     background-color: #f1f1f1;
@@ -91,7 +94,8 @@ position:static;
      <h1><b>  <div id="div1" class="fa"></div> </b></h1>
    
 <canvas id="myCanvas" width=500 height=500 
- style="background:url('bg1.png');  background-size: 50%; height: 55% ">
+ style=" 
+    background:url('bg1.png');  background-size: 50%; height: 55% ">
 </canvas>
   
 <script> 
@@ -293,7 +297,7 @@ function Do_a_Frame () {
 
  <div class="column">
 
-<br><br><br><br><br><br><br><brr>
+<br><br><br><br><br><br>
 
         <br>
     <style type="text/css">
@@ -347,29 +351,15 @@ function Do_a_Frame () {
             }
             r.innerHTML = finalTranscripts + '<span style="color:#999">' + interimTranscripts + '</span>';
 
-          
-
-
-          };
-          speechRecognizer.onerror = function (event) {
-
-                      if(transcript==="damn"|| transcript==="kill" || transcript==="shit") {
+              if(interimTranscripts==="damn"|| interimTranscripts==="hello" || interimTranscripts==="shit") {
                
                warning = warning+1;
 
-
-              if(warning===2) {
-
-                alert("Blocked!");
-                sleep(1000);
-              }  
-        else{
               alert("Warning: " + warning);
+              }  
 
-             
-
-                }
-              }
+          };
+          speechRecognizer.onerror = function (event) {
           };
         }else{
           r.innerHTML = 'Your browser is not supported. If google chrome, please upgrade!';
